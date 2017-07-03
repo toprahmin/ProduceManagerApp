@@ -18,6 +18,12 @@ public class OrderItem {
     private String productDescription;
     private double quantity;
 
+    public OrderItem(){}
+
+    public OrderItem(String productDescription, double quantity){
+        this.productDescription = productDescription;
+        this.quantity = quantity;
+    }
 
     public String getProductDescription() {
         return productDescription;

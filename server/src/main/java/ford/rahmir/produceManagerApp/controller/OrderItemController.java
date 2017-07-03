@@ -45,7 +45,7 @@ public class OrderItemController {
         OrderItem currentOrderItem = productOrderRepository.findOne(id);
         currentOrderItem.setQuantity(orderItem.getQuantity());
         productOrderRepository.save(currentOrderItem);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(currentOrderItem, HttpStatus.OK);
     }
 
 }
